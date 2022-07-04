@@ -5,16 +5,15 @@
 }
 body{
     width: 70vw;
+    font-family: "raleway";
 }
 .top-header{
     display: flex;
-    justify-content: left;
-    width: 80vw;
+    justify-content: right;
     margin: 0 auto;
 }
 #logo{
-    width: 150px;
-    margin-right: 100px;
+    width: 110px;
 }
 .indentite{
     width: 100%;
@@ -36,11 +35,27 @@ h1{
     list-style-type: none;
     font-size: 1.2em;
     margin: 20px;
+    padding-top: 30px;
 }
 .nav_header a{
     display: inline-block;
+    position: relative;
+    display: inline-block;
     text-decoration: none;
+    height: 50px;
+    color: #145DA0;
 }
+.nav_header a:hover::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    text-decoration: underline;
+    width: 2px;
+    border: 4px solid;
+    border-radius: 45%;
+}
+
 #baniere{
     width: 600px;
 }
